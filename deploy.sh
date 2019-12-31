@@ -1,5 +1,5 @@
 docker build -t bemineni/multi-client:latest -t bemineni/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t bemineni/multi-server:latest -t bemineni/multi-client:$SHA -f ./server/Dockerfile ./server
+docker build -t bemineni/multi-server:latest -t bemineni/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t bemineni/multi-worker:latest -t bemineni/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push bemineni/multi-client
